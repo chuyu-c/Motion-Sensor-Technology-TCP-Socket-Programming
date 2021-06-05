@@ -15,7 +15,7 @@ In this project, we are developing a streaming analytics system which aims to de
 
 
 ## Model Process
-|------------------------------|-------------------|------------------|-----------|-------------|
+
 | Model                        | Training Accuracy | Testing Accuracy | F-Measure | Overfitting |
 |------------------------------|-------------------|------------------|-----------|-------------|
 | SVM                          | 0.9884            | 0.9880           | 0.9880    | No          |
@@ -26,7 +26,7 @@ In this project, we are developing a streaming analytics system which aims to de
 | Stochastic Gradient Boosting | 0.8613            | 0.8609           | 0.8485    | No          |
 | Perceptron                   | 0.8499            | 0.8486           | 0.8394    | No          |
 | Naive Bayesian               | 0.9561            | 0.9567           | 0.9554    | No          |
-|------------------------------|-------------------|------------------|-----------|-------------|
+
 
 
 
