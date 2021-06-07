@@ -29,6 +29,17 @@ In this project, we are developing a streaming analytics system which aims to de
 
 ## Server Side Implementation
 
+ * The API called the server to set up a listening socket, which listens to a connection from the client. Once the client is ready to connect, it calls connect and the server calls accept to establish the connection. 
+
+ * The server loads cleaned testing dataset. Each row in the dataset is loaded into dictionary format as shown below:
+  * {"wrist": "0", "acceleration_x": "0.265", "acceleration_y": "-0.7814", "acceleration_z": "-0.0076", "gyro_x": "-0.059", "gyro_y": "0.0325", "gyro_z": "-2.9296", "label": "0"}
+
+ * We store the actual run/walk status into variable state[‘label’]. We will use this to check if the prediction returned by client is valid in the future steps.
+ * We encoded the streaming data as JSON format and send it to the client one row by a time. The server will print ‘End of stream‘ when all data had been sent.
+ * We use the ListenToClient function to receive the predictions returned by the client side. At the meantime, we show how many records we correctly predicted and the accuracy rate so far. 
+ * The check variable stores if previous prediction is correct/incorrect. The server will send back this information to client on the next stream.
+
+
 
 
 
