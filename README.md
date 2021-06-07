@@ -40,8 +40,8 @@ In this project, we are developing a streaming analytics system which aims to de
  6. The check variable stores if previous prediction is correct/incorrect. The server will send back this information to client on the next stream.
 
 ## Client Side Implementation
- 1. Received predictor data as a dictionary
- 2. Use random forest model to predict current action and print out the result
+ 1. Received predictor data as a dictionary.
+ 2. Use random forest model to predict current action and print out the result.
  3. Starting from second received information, client will adjust previous prediction according to server response for previous prediction, and global variable <correct> will count accurate predictions.
  4. In the meantime, <action_warning> function and global variable <current_act> and  <times> will track if user repeats the same action for more than 5 times. If yes, the client will print out the healthy warning message to notify user.
  5. Finally, after finishing the last prediction, client will calculate the accuracy rate of all predictions and print it out. This will be a crucial indication of our model’s performance.
