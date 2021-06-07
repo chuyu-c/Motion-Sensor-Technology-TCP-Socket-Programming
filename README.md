@@ -27,6 +27,7 @@ In this project, we are developing a streaming analytics system which aims to de
 | Perceptron                   | 0.8499            | 0.8486           | 0.8394    | No          |
 | Naive Bayesian               | 0.9561            | 0.9567           | 0.9554    | No          |
 
+## Server Side Implementation
 
 
 
