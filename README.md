@@ -37,7 +37,7 @@ __Step 1__
 The API called the server to set up a listening socket, which listens to a connection from the client. Once the client is ready to connect, it calls connect and the server calls accept to establish the connection.   
 __Step 2__  
 The server loads cleaned testing dataset. Each row in the dataset is loaded into dictionary format as shown below:
-   * {"wrist": "0", "acceleration_x": "0.265", "acceleration_y": "-0.7814", "acceleration_z": "-0.0076", "gyro_x": "-0.059", "gyro_y": "0.0325", "gyro_z": "-2.9296", "label": "0"}
+   * {"wrist": "0", "acceleration_x": "0.265", "acceleration_y": "-0.7814", "acceleration_z": "-0.0076", "gyro_x": "-0.059", "gyro_y": "0.0325", "gyro_z": "-2.9296", "label": "0"}  
 __Step 3__  
 We store the actual run/walk status into variable state[‘label’]. We will use this to check if the prediction returned by client is valid in the future steps.  
 __Step 4__  
