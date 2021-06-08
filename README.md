@@ -53,16 +53,16 @@ __Step 6__
 The check variable stores if previous prediction is correct/incorrect. The server will send back this information to client on the next stream.
 
 ## Client Side Implementation
-#### Step 1
-Received predictor data as a dictionary.
-#### Step 2
-Use random forest model to predict current action and print out the result.
-#### Step 3
-Starting from second received information, client will adjust previous prediction according to server response for previous prediction, and global variable <correct> will count accurate predictions.
-#### Step 4
-In the meantime, <action_warning> function and global variable <current_act> and  <times> will track if user repeats the same action for more than 5 times. If yes, the client will print out the healthy warning message to notify user.
-#### Step 5
-Finally, after finishing the last prediction, client will calculate the accuracy rate of all predictions and print it out. This will be a crucial indication of our model’s performance.
+__Step 1__  
+Received predictor data as a dictionary.  
+__Step 2__  
+Use random forest model to predict current action and print out the result.  
+__Step 3__  
+Starting from second received information, client will adjust previous prediction according to server response for previous prediction, and global variable <correct> will count accurate predictions.  
+__Step 4__  
+In the meantime, <action_warning> function and global variable <current_act> and  <times> will track if user repeats the same action for more than 5 times. If yes, the client will print out the healthy warning message to notify user.  
+__Step 5__  
+Finally, after finishing the last prediction, client will calculate the accuracy rate of all predictions and print it out. This will be a crucial indication of our model’s performance.  
 
 
 
